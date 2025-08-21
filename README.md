@@ -16,3 +16,8 @@ Este formulário foi construído utilizando as seguintes linguagens de programa�
 
   * **Git da Rafaella Ballerini:** [https://github.com/rafaballerini](https://github.com/rafaballerini)
   * **Link para o Vídeo do Tutorial:** [https://www.youtube.com/watch?v=wwqOJ2o84S4](https://www.youtube.com/watch?v=wwqOJ2o84S4)
+
+
+### Imagem do Formulário
+
+![Visualização do Formulário](formulario.jpg)
