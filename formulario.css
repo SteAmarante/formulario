@@ -1,0 +1,149 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FF69B4; /* Rosa */
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 1em;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1E90FF; /* Azul Royal */
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+} 
+
+/* A caixa de tecnologias agora tem centralização de texto */
+#check{
+    display: block; /* Garante que o container se comporte como um bloco */
+    text-align: center; /* Centraliza o conteúdo inline */
+    max-width: 30em; /* Define a largura máxima para o contêiner de tecnologias */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Centraliza apenas o título da seção de tecnologias e adiciona espaçamento */
+#check strong {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em; /* Espaçamento de uma linha */
+    width: 100%;
+}
+
+/* Ignora os <br> dentro do contêiner para um espaçamento consistente */
+#check br {
+    display: none;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+    margin-bottom: 1em;
+    margin: 0 auto; /* Centraliza o fieldset */
+}
+
+/* Elemento de tag <body> */
+body {
+    background-color: #1A237E; /* Azul Escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #F8BBD0; /* Rosa Claro */
+    display: flex; /* Transforma o corpo em um container flex */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #1E90FF; /* Azul Royal */
+    border-radius: 8px;
+    border: 1px solid #1E90FF;
+    background-color: #E3F2FD; /* Azul Pastel */
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin: 0 auto 1em; /* Aplica a centralização e espaçamento vertical */
+    width: 25em; /* Define a largura para todos os campos */
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.5em;
+    color: #F8BBD0; /* Rosa Claro */
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float: none; /* Remove a flutuação para alinhamento correto */
+    margin: 0 auto 1em; /* Centraliza os campos dentro do fieldset */
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    display: block;
+    width: 100%; /* Ocupa a largura total do container */
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #BBDEFB; /* Azul mais claro */
+    outline: none;
+    border: 1px solid #FF69B4; /* Rosa */
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.5em;
+    background: #FF69B4; /* Rosa */
+    border: none;
+    margin: 0 auto; /* Centraliza o botão */
+    margin-top: 2em;
+    color: #FFFFFF;
+    padding: 0.5em 1.5em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block; /* Ocupa o espaço do bloco para a centralização */
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #1E90FF; /* Azul Royal */
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
